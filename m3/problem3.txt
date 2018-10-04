@@ -1,0 +1,128 @@
+Activity-3:
+
+tilde approxiamations:
+
+
+1)n+1 ~ n
+
+2)1+1/n ~ 1
+
+3)2n^3-15n^2+n
+ ~n^3-n^2+n
+ ~n(n^2-n+1)
+ ~n(n^2-n)
+ ~n(n^2)
+ ~n^3
+
+4)log(2n)/log n
+ ~(log 2+log n)/log n
+ ~(1+log n)/log n
+ ~(log n)/log n
+ ~1
+
+5)log(n^2+1)/log n
+ ~log n^2/log n
+ ~2logn/logn
+ ~2
+
+6)(1+1/2n)(1+1/n)
+ ~(1)(1)
+ ~1
+
+
+Activity 4:
+
+Code-1:     int count = 0;
+
+            for(int i = 0; i < N; i++){
+
+                count++;
+
+            }
+
+no of running times=O(N)
+
+ Code-2:           int sum = 0;
+
+            if(sum == 0){
+
+                sum++;
+
+}
+
+no of running times=O(1)
+
+Code-3:           for(int i = N; i > 0; i = N/2){
+
+            int sum = 0;
+
+}
+
+no of running times=O(log n)
+
+ Code-4:           for(int i = 0; i < N; i++){
+
+                for(int j = 0; j < N; j++){
+
+                    System.out.println(“Hello”);
+
+                }
+
+            }
+
+no of running times=O(n^2)
+
+
+ Code-5:     for(int i = 0; i < N; i++){
+
+                for(int j =1; j < N; j = j * 2){
+
+                    System.out.println(“Hello”);
+
+                }
+
+            }
+
+no of running times=O(n^2/2) 
+
+ Code-6:     public int fibonacci(int number) {
+
+ if (number <= 1) {
+
+                       return number;
+
+                 } else {
+
+                           return fibonacci(number - 1) + fibonacci(number - 2);
+
+                 }
+
+}
+
+no of running times=O((n-1)^2)
+
+ Activity 5:
+
+Code-1:     int sum = 0;
+        for (int n = N; n > 0; n /= 2)
+            for(int i = 0; i < n; i++)
+                Sum++;
+
+   no of running times=O(nlogn)
+
+
+Code-2:    int sum = 0;
+        for (int i = 1 i < N; i *= 2)
+            for (int j = 0; j < i; j++)
+                sum++;
+
+     
+
+ no of running times=O(nlogn)      
+
+Code-3:    int sum = 0;
+        for (int i = 1 i < N; i *= 2)
+            for (int j = 0; j < N; j++)
+                Sum++;
+
+   no of running times=O(nlogn)      
