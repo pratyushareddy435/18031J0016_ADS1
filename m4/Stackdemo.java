@@ -3,85 +3,51 @@ package module4;
 import java.util.Scanner;
 import java.util.Stack;
 
-class Postfix
-{
-	String s;
-     int i;
-	Postfix(String exp)
-	{
-		this.s=exp;
-	}
-	void evaluate(String exp)
-	{
-		String str[]=exp.split(" ");
-		int l=str.length;
-		Stack<Integer> stack = new Stack<>(); 
-		///int st[]=new int[l];
-		for(i=0;i<l;i++)
-		{
-			if(str[i].equals("*"))
-			 {
-				//i=i-2;
-				int val1=Integer.valueOf(str[i-1]);
-				int val2=Integer.valueOf(str[i-2]);
-				stack.pop();
-				stack.pop();
-				stack.push(val1*val2);
-			}
-			else if(str[i].equals("+"))
-			{
-				//i=i-2;
-				int val1=Integer.valueOf(str[i-1]);
-				int val2=Integer.valueOf(str[i-2]);
-				stack.pop();
-				stack.pop();
-				stack.push(val1+val2);
-			}
-			else if(str[i].equals("-"))
-			{
-				int val1=Integer.valueOf(str[i-1]);
-				int val2=Integer.valueOf(str[i-2]);
-				stack.pop();
-				stack.pop();
-				stack.push(val1-val2);
-			}
-			else if(str[i].equals("/"))
-			{
-				int val1=Integer.valueOf(str[i-1]);
-				int val2=Integer.valueOf(str[i-2]);
-				stack.pop();
-				stack.pop();
-				stack.push(val1/val2);
-			}
-			else if(str[i].equals("%"))
-			{
-				int val1=Integer.valueOf(str[i-1]);
-				int val2=Integer.valueOf(str[i-2]);
-				stack.pop();
-				stack.pop();
-				stack.push(val1%val2);
-			}
-			else
-			{
-				int val1=Integer.valueOf(str[i]);
-				stack.push(val1);
-			}
-			System.out.println(stack.pop());
-		}
-		}
-}
- class Stackdemo
-{
+class Postfix {
+	
+	void evaluate(String exp) {
+		String str[] = exp.split(" ");
+		int n = 0, l = str.length;
+		Stack<Integer> stack = new Stack<>();
+		for (int i = 0; i < l; i++) {
+			try {
+				n = Integer.parseInt(str[i]);
+				stack.push(n);
+			} catch (NumberFormatException e) {
+				int v1 = stack.pop();
+				int v2 = stack.pop();
+				switch (str[i].charAt(0)) {
+				case '+':
+					n = v1 + v2;
+					break;
+				case '-':
+					n = v2 - v1;
+					break;
+				case '*':
+					n = v1 * v2;
+					break;
+				case '/':
+					n = v2 / v1;
+					break;
 
-	public static void main(String[] args) 
-	{
+				}
+				stack.push(n);
+			}
+
+		}
+		System.out.println(stack.pop());
+	}
+}
+
+class Stackdemo {
+
+	public static void main(String[] args) {
 		String exp;
-		Scanner s=new Scanner(System.in);
-		System.out.println("enter stringfor postfix nottion" );
-		exp=s.nextLine();
-		Postfix p=new Postfix(exp);
+		Scanner s = new Scanner(System.in);
+		System.out.println("enter stringfor postfix nottion");
+		exp = s.nextLine();
+		Postfix p = new Postfix();
 		p.evaluate(exp);
-		
 
 	}
 
