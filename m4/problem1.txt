@@ -1,0 +1,26 @@
+Activity-1:
+
+given input it was-the best -of times---it was-the--
+
+push(it)
+push(was)
+pop-was
+now stack has -it
+push(the)
+push(best)
+pop()-best
+now stack contains -it the
+push(of)
+push(times)
+pop()-times
+pop()-of
+pop()-the 
+now stack contains-it
+push(it)
+push(was)
+pop()-was
+now stack contains-it it
+push(the)
+pop()-the
+pop()-it
+now finaally stack contains-it
