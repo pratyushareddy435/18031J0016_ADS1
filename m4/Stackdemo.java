@@ -44,7 +44,7 @@ class Stackdemo {
 	public static void main(String[] args) {
 		String exp;
 		Scanner s = new Scanner(System.in);
-		System.out.println("enter stringfor postfix nottion");
+		//System.out.println("enter stringfor postfix nottion");
 		exp = s.nextLine();
 		Postfix p = new Postfix();
 		p.evaluate(exp);
