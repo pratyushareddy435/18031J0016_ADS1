@@ -27,7 +27,7 @@ int  q[]=new int[n];
 				{
 					if(q[j]+q[k]+q[l]==0)
 					{
-						count++;
+						count++;  
 					}
 				}
 			

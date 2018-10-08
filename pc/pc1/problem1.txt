@@ -1,0 +1,78 @@
+k.pratyusha
+roll -18031j0016
+
+1)
+first while loop-N/2
+second while loop-N/2
+total -N/2+n/2=N
+
+2)enqueue-playing
+enqueue-cricket
+dequeue()
+queuecontains-cricket
+enqueue-is
+dequeue()
+queue contains-is
+enqueue-a
+enqueue-hobby
+dequeue()
+dequeue()
+queue contains-hobby
+enqueue-of
+dequeue()
+dequeue()
+queue contains-empty
+enqueue-mentor
+dequeue()
+queue contains-empty
+enqueue-deepak
+now finally queue conatains-deepak.
+final answer-deepak
+
+3)b,c in reverse order
+
+4)
+0 1 2 3 4 5 6 7 8 9
+0 1 2 4 4 5 6 7 8 9-(3,4)
+0 1 2 9 9 5 6 7 8 9-(4,9)
+0 1 2 9 9 5 6 7 0 9-(8,0)
+0 1 9 9 9 5 6 7 0 9-(2,3)
+0 1 9 9 9 6 6 7 0 9-(5,6)
+0 1 9 9 9 9 9 7 0 9-(5,9)
+0 1 9 9 9 9 9 9 0 9-(7,3)
+0 1 9 9 9 9 9 9 9 9-(4,8)
+0 9 9 9 9 9 9 9 9 9-(6,1)
+
+5)given {[]()}
+first iteration-stack size-1{
+second iteration size-2{[
+third iteration size-1{
+fourth iteration size-2{(
+fifth iteration-size-1{
+sixth iteration-size-0stack empty
+
+6)
+first loop-N/4
+inner loop-n
+O(Nlogn)
+
+7)first loop-N
+second loop-N/2
+total-N+N/2;
+
+8)(n-1)^2
+
+9)1 or N^2
+
+10)
+0 1 2 3 4 5 6 7 8 9
+0 1 2 4 4 5 6 7 8 9-(3,4)
+0 1 2 9 9 5 6 7 8 9-(4,9)
+0 1 2 9 9 5 6 7 0 9-(8,0)
+0 1 9 9 9 5 6 7 0 9-(2,3)
+0 1 9 9 9 6 6 7 0 9-(5,6)
+0 1 9 9 9 9 9 7 0 9-(5,9)
+0 1 9 9 9 9 9 9 0 9-(7,3)
+0 1 9 9 9 9 9 9 9 9-(4,8)
+0 9 9 9 9 9 9 9 9 9-(6,1)
+ 
