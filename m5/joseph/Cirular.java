@@ -25,6 +25,7 @@ public class Cirular {
 				ll.remove(temp);
 				
 			}
+                            System.out.println(" ");
 		}
 
 	}
