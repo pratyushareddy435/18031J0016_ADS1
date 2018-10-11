@@ -1,0 +1,14 @@
+Stack stack = new Stack();
+
+while (!q.isEmpty())
+
+stack.push(q.dequeue());
+
+while (!stack.isEmpty())
+
+q.enqueue(stack.pop());
+
+Answer-
+In the given code if queue is not empty then elements in queue are deleted and inserted in
+to the stack.and in the next  while loop untill the stack becomes empty elements in stack
+are poped and inserted into the queue.
