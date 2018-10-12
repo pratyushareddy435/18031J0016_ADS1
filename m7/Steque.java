@@ -1,4 +1,4 @@
-package module7;
+
 
 import java.util.LinkedList;
 import java.util.Scanner;
