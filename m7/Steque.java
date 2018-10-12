@@ -49,6 +49,7 @@ public class Steque {
 		Scanner scan = new Scanner(System.in);
 		n = scan.nextInt();
 		Steque1 st = new Steque1();
+		int flag = 0;
 		do {
 			String s = scan.nextLine();
 			String[] s1 = s.split(" ");
@@ -69,7 +70,9 @@ public class Steque {
 				break;
 			default:
 				st.removeAll();
+				if(flag==1)
 				System.out.println();
+				flag=1;
 
 			}
 
