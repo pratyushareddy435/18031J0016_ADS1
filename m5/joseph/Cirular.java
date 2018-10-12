@@ -1,3 +1,4 @@
+package module5;
 
 import java.util.LinkedList;
 import java.util.Scanner;
@@ -21,10 +22,11 @@ public class Cirular {
 			while(ll.size()!=0)
 			{
 				temp=(temp+m-1)%ll.size();
-				System.out.print(ll.get(temp));
+				System.out.print(ll.get(temp)+" ");
 				ll.remove(temp);
 				
 			}
+			System.out.println("");
 		}
 
 	}
