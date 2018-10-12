@@ -19,10 +19,13 @@ public class Cirular {
 				ll.add(j);
 			}
 			int temp=0;
+                         temp=(temp+m-1)%ll.size();
+		     System.out.print(ll.get(temp));
+			ll.remove(temp);
 			while(ll.size()!=0)
 			{
 				temp=(temp+m-1)%ll.size();
-				System.out.print(ll.get(temp)+" ");
+				System.out.print(" "+ll.get(temp));
 				ll.remove(temp);
 				
 			}
