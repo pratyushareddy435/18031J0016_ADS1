@@ -1,0 +1,78 @@
+package module8;
+import java.util.*;
+import java.io.*;
+class Team
+{
+	String tm;
+	int wins;
+	int losses;
+	int draws;
+	Team(String tm,int wins,int looses,int draws)
+	{
+		this.tm=tm;
+		this.wins=wins;
+		this.losses=losses;
+		this.draws=draws;
+	}
+}
+class WinComparator implements Comparator
+{
+	public int compare(Object o1,Object o2){  
+		Team s1=(Team)o1;  
+		Team s2=(Team)o2;  
+		  
+		if(s1.wins==s2.wins)  
+		return 0;  
+		else if(s1.wins>s2.wins)  
+		return 1;  
+		else  
+		return -1;  
+		} 
+}
+class LossesComparator implements Comparator
+{
+	public int compare(Object o1,Object o2){  
+		Team s1=(Team)o1;  
+		Team s2=(Team)o2;  
+		  
+		if(s1.losses==s2.losses)  
+		return 0;  
+		else if(s1.losses>s2.losses)  
+		return 1;  
+		else  
+		return -1;  
+		} 
+}
+class DrawsComparator implements Comparator
+{
+	public int compare(Object o1,Object o2){  
+		Team s1=(Team)o1;  
+		Team s2=(Team)o2;  
+		  
+		if(s1.draws==s2.draws)  
+		return 0;  
+		else if(s1.draws>s2.draws)  
+		return 1;  
+		else  
+		return -1;  
+		} 
+}
+public class Selectionteam
+{
+	public static void main(String args[])
+	{
+		Scanner sc=new Scanner(System.in);
+		ArrayList al=new ArrayList();
+		while(sc.hasNextLine())
+		{
+			al.add(sc.next());
+		}
+		Collections.sort(al,new WinComparator());
+		Iterator itr=al.iterator();
+		while(itr.hasNext())
+		{
+			Team t=(Team)itr.next();
+			System.out.println(t.tm+",");
+		}
+	}
+}

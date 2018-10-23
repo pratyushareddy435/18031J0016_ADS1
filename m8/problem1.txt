@@ -1,0 +1,49 @@
+E A S Y Q U E S T I O N selection sort
+
+min = " ";
+i = 0;
+j = i+1;
+
+i j
+E A S Y Q U E S T I O N
+  min
+
+  i j
+A E S Y Q U E S T I O N
+  min
+
+    i       j
+A E S Y Q U E S T I O N
+            min
+
+      i           j
+A E E Y Q U S S T I O N
+                  min
+
+        i             j
+A E E I Q U S S T Y O N
+                      min
+
+          i         j
+A E E I N U S S T Y O Q
+                   min
+
+            i         j
+A E E I N O S S T Y U Q
+                     min
+
+              i       j
+A E E I N O Q S T Y U S
+                      min
+
+                i     j  
+A E E I N O Q S T Y U S
+                     min
+
+                  i   j
+A E E I N O Q S S Y U T
+                      min
+
+                    i j
+A E E I N O Q S S T U Y
+                   min

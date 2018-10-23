@@ -1,0 +1,2 @@
+Which method runs faster for an array with all keys identical, basic selection sort or basic insertion sort?
+Ans:Insertion sort

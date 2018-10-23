@@ -1,0 +1,31 @@
+write the missing statements in the below code:\
+
+public class Selection { 
+
+public static void sort(Comparable[] a) {
+
+int N = ---------------;    //Blank 1
+
+for (int i = 0; i < N; i++) { 
+
+Int min = ---------------;    //Blank 2
+
+for (int j = i+1; j < N; j++) 
+
+if (less(a[j], a[min])) 
+
+min = ------------------; //Blank3
+
+exch(a, i, ----------------);     //Blank4
+
+}
+
+ }
+
+ }
+
+Answers-
+Blank 1:size of the array to be sorted.
+Blank 2:0
+Blank 3:which element is lesser.
+Blank 4:min

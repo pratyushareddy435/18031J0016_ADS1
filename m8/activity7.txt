@@ -1,0 +1,35 @@
+If a = {3, 6, 4, 2, 1, 0} is the input for below code
+
+public class Insertion { 
+
+public static void sort(Comparable[] a) { 	
+
+int N = a.length; 
+
+for (int i = 1; i < N; i++) { 
+
+for (int j = i; j > 0 && less(a[ j ], a[j-1]); j--) 
+
+exch(a, j, j-1); 
+
+} 
+
+}
+
+}
+
+}
+
+
+Answer the following questions
+
+Note: while writing answers use the following notation [1, 2, 3, 4]
+
+Print the elements in the array a, after completion of 2nd iteration of loop i
+
+elements after 2nd iteration-[3,4,6,2,1,0]
+
+Print the elements in the array a, in 3rd iteration of i and after completion of 2nd iteration of loop j
+
+Print the elements in the array a, in 4th iteration of i and after completion of 1st iteration of loop j
+

@@ -1,0 +1,176 @@
+E A S Y Q U E S T I O N -insertion sort
+
+int i=0;
+int j=i;
+
+i
+E
+j
+
+  i
+E A
+  j
+
+  i
+A E
+j
+   
+    i
+A E S
+    j
+
+      i
+A E S Y
+      j
+
+        i
+A E S Y Q
+        j
+
+        i
+A E S Q Y
+      j
+
+        i
+A E Q S Y
+    j
+
+          i
+A E Q S Y U
+          j
+
+          i
+A E Q S U Y
+        j
+
+            i
+A E Q S U Y E
+            j
+
+            i
+A E Q S U E Y
+          j
+            
+            i
+A E Q S E U Y
+        j
+
+            i
+A E Q E S U Y
+      j
+
+            i
+A E E Q S U Y
+    j
+
+              i
+A E E Q S U Y S
+              j
+ 
+              i
+A E E Q S U S Y
+            j
+
+              i
+A E E Q S S U Y
+          j
+
+                i
+A E E Q S S U Y T
+                j
+
+                i
+A E E Q S S U T Y
+              j
+
+                i
+A E E Q S S T U Y
+            j
+
+                  i
+A E E Q S S T U Y I
+                  j
+
+                  i
+A E E Q S S T U I Y
+                j
+
+                  i
+A E E Q S S T I U Y
+              j
+
+                  i
+A E E Q S S I T U Y
+            j
+
+                  i
+A E E Q S I S T U Y
+          j
+
+                  i
+A E E Q I S S T U Y
+        j
+
+                  i
+A E E I Q S S T U Y
+      j
+
+                    i
+A E E I Q S S T U Y O
+                    j
+
+                    i
+A E E I Q S S T U O Y
+                  j
+
+                    i
+A E E I Q S S T O U Y
+                j
+
+                    i
+A E E I Q S S O T U Y
+              j
+
+                    i
+A E E I Q S O S T U Y
+            j
+
+                    i
+A E E I Q O S S T U Y
+          j
+
+                    i
+A E E I O Q S S T U Y
+        j
+
+                      i
+A E E I O Q S S T U Y N
+                      j
+
+                      i
+A E E I O Q S S T U N Y
+                    j
+
+                      i
+A E E I O Q S S T N U Y
+                  j
+
+                      i
+A E E I O Q S S N T U Y
+                j
+
+                      i
+A E E I O Q S N S T U Y
+              j
+
+                      i
+A E E I O Q N S S T U Y
+            j
+
+                      i
+A E E I O N Q S S T U Y
+          j
+
+                      i
+A E E I N O Q S S T U Y
+        j

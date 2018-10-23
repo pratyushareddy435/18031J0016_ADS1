@@ -1,0 +1,4 @@
+
+Which method runs faster for an array in reverse order, basic selection sort or basic insertion sort?
+
+Ans:selection sort
