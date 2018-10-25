@@ -1,0 +1,89 @@
+BOTTOM UP:
+
+given -EASYQUESTION
+
+size-12
+ E A S Y Q U E S T I O N
+
+E A | S Y | Q U | E S | T I | O N
+
+A E | S Y | Q U |  E S | I T | N O
+
+A  E  S Y | E Q U S | I  N  O  T
+
+A  E  E  Q U S S Y | I N O T
+
+A  E  E  I  N  O  Q  S  S  T  U  Y 
+
+ 
+ Activity -7:
+   
+given array size -39
+first half -20
+second half-19
+first half sub array sizes-
+                         20
+          10                         10
+     5          5               5           5
+   2    3      2     3       2     3      2    3
+1   1  2  1   1  1  2  1   1   1  2  1  1  1 2   1
+1   1 1 1  1  1  1 1  1 1  1   1 1  1 1 1   1 1 1 1
+
+
+seond half sub  array sizes:
+   
+                                      19 
+                 10                                       9
+         5                   5                     5                  4 
+    2          3         2         3           2        3          2        2 
+  1    1    1     2    1    1    1    2     1     1   1    2     1     1   1    1
+  1    1    1   1   1  1     1   1  1    1  1     1   1  1    1  1      1   1    1
+
+
+Activity-8:
+
+write the missing statements in the below code:
+
+public static void merge(Comparable[] a, int lo, int mid, int hi) { 
+
+int i = lo, 
+
+j = mid+1; 
+
+for (int k = lo; k <= hi; k++) 
+
+aux[k] = a[k]; 
+
+for (int k = lo; k <= hi; k++) 
+
+if (i > -----------)                                         //Blank 1
+
+a[k] = aux[--------];                      //Blank 2
+
+else if (--------- > hi )                                //Blank 3
+
+a[k] = aux[----------];                   //Blank 4
+
+else if (less(aux[--------], aux[--------]))   //Blank 5    //Blank 6
+
+a[k] = aux[j++]; 
+
+else 
+
+a[k] = aux[i++];
+
+ }
+
+Answers:
+
+1:j
+
+2:j
+
+3:i
+
+4:i
+
+5:lo
+
+6:hi

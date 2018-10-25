@@ -1,0 +1,42 @@
+top -bottom merge sort:
+
+given -EASYQUESTION
+
+size-12
+ E A S Y Q U E S T I O N
+
+   E A S Y Q U  |  E S T I O N 
+
+ firs half:
+ 
+E A S  | Y Q U  
+ 
+ E  A | S  | Y  Q | U 
+
+E  |  A  | S  | Y | Q | U
+
+A  E  |  S    |   Q  Y  | U
+
+A  E  S |  Q  U  Y
+
+A  E  Q  S  U  Y
+
+second half:
+
+   E S T  | I O N 
+
+   E  S  |  T  |  I  O  |  N 
+    
+   E  |  S  |  T  |   I  |  O  |  N
+
+   E  S  |  T   |  I  O   |  N 
+    
+   E   S  T  |   I  N  O
+ 
+    E   I  N   O  S  T
+ 
+merging both halves:
+ 
+ A  E  Q  S  U  Y  |   E  I  N  O  S  T
+  
+  A  E  E  I  N  O  Q  S  S  T  U  Y  

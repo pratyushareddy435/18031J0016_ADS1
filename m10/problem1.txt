@@ -1,0 +1,219 @@
+Activity-2:
+
+public int count(int n) {
+
+  if(n <= 6){
+
+    return 0;
+
+  }
+
+  if(n%10 == 7){
+
+    return 1 + count(n/10);
+
+  }
+
+  return count(n/10);
+
+}
+
+Answer the following question when count method is called with different parameters.
+
+1)count(717):717%10==7
+=1+return count(717/10)=1+return count(71)
+=1+return count(71/10)=1+return count(7)
+=1+return count7/10)
+=1+return count(0)
+=1+0=1 
+ 
+2)count(7)
+=return count7/10)
+=return count(0)
+=0 
+
+3)count(123)
+=return count(123/10)
+=count(12)
+count(12)=return count(12/10)=count(2)
+count(2)= 0.
+
+4)count(47571)=return count(47571/10)=count(4757)
+count(4757)=4757%10==7
+=>return 1+count(475)
+        =1+return count(475/10)
+        =1+return count(47)   47%10==7
+        =1+1+return count (47/10)
+        =2+ return count(4)
+        =2+0
+        =2.
+
+5)count(99999)
+=return count(99999/10)=count(9999)
+=return count(9999/10)=count(999)
+=return count(999/10)=count(99)
+=return count(99/10)=count(9)
+=return count(9/10)=count(0)
+=0.
+
+
+Activity-3:
+
+public int triangle(int rows) {
+
+  if(rows == 0){
+
+    return 0;
+
+  }
+
+  return rows + triangle(rows-1);
+
+}
+
+Answer the following question when triangle method is called with different parameters.
+
+1)triangle(3)
+=3+triangle(2)
+=3+2+triangle(1)
+=3+2+1+triangle(0)
+=6+0=6.
+
+2)triangle(2)
+=2+triangle(1)
+=2+1+triangle(0)
+=3+0=3.
+
+3)triangle(6)
+=6+triangle(5)
+=6+5+triangle(4)
+=6+5+4+triangle(3)
+=6+5+4+3+triangle(2)
+=6+5+4+3+2+triangle(1)
+=6+5+4+3+2+1+triangle(1)
+=6+5+4+3+2+1+triangle(0) 
+=21
+
+4)triangle(4)
+=4+triangle(3)
+=4+3+triangle(2)
+=4+3+2+triangle(1)
+=4+3+2+1+triangle(1)
+=4+3+2+1+triangle(0) 
+=10.
+
+5)triangle(7)
+=7+triangle(6)
+=7+6+triangle(5)
+=7+6+5+triangle(4)
+=7+6+5+4+triangle(3)
+=7+6+5+4+3+triangle(2)
+=7+6+5+4+3+2+triangle(1)
+=7+6+5+4+3+2+1+triangle(1)
+=7+6+5+4+3+2+1+triangle(0)
+=28.
+
+
+Activity4:
+
+public int bunnyEars(int bunnies)
+
+{
+
+	if(bunnies == 0)
+
+		return 0;
+
+	if(bunnies % 2 == 1)
+
+		return 2 + bunnyEars(bunnies-1);
+
+	return 3 + bunnyEars(bunnies-1);
+
+}
+
+Answer the following question when bunnyEars method is called with different parameters.
+
+1)bunnyEars(0)
+=0
+
+
+2)bunnyEars(2)
+=3+bunnyEars(1)
+=3+3+bunnyEars(0)
+=6+0=6.
+
+
+3)bunnyEars(4)
+=3+bunnyEars(3)
+=3+2+bunnyEars(2)
+=3+3+2+bunnyEars(1)
+=3+3+2+3+bunnyEars(0)
+=11+0=11
+
+4)bunnyEars(5)
+=3+bunnyEars(4)
+=3+3+bunnyEars(3)
+=3+3+2+bunnyEars(2)
+=3+3+3+2+bunnyEars(1)
+=3+3+3+2+3+bunnyEars(0)
+=11+3=14
+
+
+5)bunnyEars(10)
+=3+bunnyEars(9)
+=3+3+bunnyEars(8)
+=3+3+3+bunnyEars(7)
+=3+3+3+3+bunnyEars(6)
+=12+3+bunnyEars(5)
+=15+3+bunnyEars(4)
+=15+3+3+bunnyEars(3)
+=15+3+3+2+bunnyEars(2)
+=15+3+3+3+2+bunnyEars(1)
+=15+3+3+3+2+3+bunnyEars(0)
+=11+3+15=29.
+
+Activity 5:
+
+public String endX(String str)
+
+{
+
+	if(str.length() == 0)
+
+		return str;
+
+	if(str.charAt(0) == 'x')
+
+		return endX(str.substring(1)) + 'x';
+
+	return str.charAt(0) + endX(str.substring(1));
+
+}
+
+Answer the following question when endX method is called with different parameters.
+
+endX("xxre")
+
+
+endX("xxhixx")
+
+
+
+
+endX("xx") 
+
+
+
+
+end("bxx")
+
+
+
+
+end("bxax")
+
+
+
+
+
