@@ -18,3 +18,79 @@ int f;
  System.out.println("result"+res);
  }  
 }  
+
+
+Activity -10:
+
+public static int fibonacci(int number){ 
+
+if(number == 1){ 
+
+return 1; 
+
+}
+
+else if(number == 2){
+
+	return 2;
+
+} 
+
+return fibonacci(number-1) + fibonacci(number -2); 
+
+
+In above code for number = 5 check how many times the fibonacci function is called
+
+
+--------------------------- 
+
+
+
+
+
+In above code for number = 10 check how many times the fibonacci function is called
+
+
+--------------------------- 
+
+
+
+
+public static int fibonacci(int number){
+
+int fibValue=0;
+
+if(number == 1 ){
+
+return 1;
+
+}else if(number == 2){
+
+return 2;
+
+}else if(fibArray[number]!=0){
+
+return fibArray[number];
+
+}else{
+
+ fibValue=fibonacci(number-1)+fibonacci(number-2);
+
+ fibArray[number]=fibValue;
+
+ return fibValue;
+
+}
+
+}
+
+In above code for number = 5 check how many times the fibonacci function is called
+
+
+--------------------------- 
+
+
+In above code for number = 10 check how many times the fibonacci function is called
+
+
+--------------------------- 

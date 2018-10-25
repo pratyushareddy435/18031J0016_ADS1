@@ -193,27 +193,98 @@ public String endX(String str)
 
 Answer the following question when endX method is called with different parameters.
 
-endX("xxre")
+1)endX("xxre")=
+=return endX(str.substring(1))+'x'.
+=x+endX("xre")
+=x+x+endX("re").
+=x+x+r+endX(e).
+=x+x+r+e+return str
+=xxree.
+
+2)endX("xxhixx")
+=x+endX("xhixx")
+=x+x+endX("hixx")
+=x+x+h+endX("ixx")
+=x+x+h+i+endX("xx").
+=x+x+h+i+x+endX("x")
+=x+x+h+i+x+x+return str
+=x+x+h+i+x+x+x
+=xxhixxx.
 
 
-endX("xxhixx")
+3)endX("xx") 
+=x+endX("x")
+=x+x+return str
+=x+x+x
+=xxx.
 
 
 
-
-endX("xx") 
-
-
-
-
-end("bxx")
-
+4)end("bxx")
+=b+endX("xx").
+=b+x+endX("x")
+=b+x+x+return str
+=b+x+x+x
+=bxxx.
 
 
+5)end("bxax")
+=b+endX("xax")
+=b+x+endX("ax")
+=bx+a+endX("x").
+=bxa+x+return str
+=bxaxx.
 
-end("bxax")
+
+Activity-6:
+
+public String parenBit(String str)
+
+{
+
+	int len = str.length();
+
+	if(str.charAt(0) != '(')
+
+	{
+
+		if(str.charAt(len - 1) != ')')
+
+			return parenBit(str.substring(1, len -1));
+
+		return parenBit(str.substring(1));
+
+	}
+
+	if(str.charAt(len - 1) != ')')
+
+		return parenBit(str.substring(0, len - 1));
+
+	return str;
+
+}
+
+Answer the following question when endX method is called with different parameters.
+
+1)parenBit("xyz(abc)123")
+=return parenBit("yz(abc)123")
+=return parenBit("z(abc)123")
+=return parentBit("(abc)123").
+=return parenBit("(abc)12").
+
+
+2)parenBit("(xy)1") 
+=  
+
+
+3)parenBit("hello(not really)there")
 
 
 
+4)parenBit("()") 
+=return parentBit(")").
+=).
 
+
+5)parenBit("res (ipsa) loquitor")
 
