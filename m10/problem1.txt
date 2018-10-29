@@ -271,20 +271,26 @@ Answer the following question when endX method is called with different paramete
 =return parenBit("z(abc)123")
 =return parentBit("(abc)123").
 =return parenBit("(abc)12").
-
+=return parenBit("(abc)1")
+=reuturn parenBit("(abc)")
+=(abc).
 
 2)parenBit("(xy)1") 
-=  
+= return parenBit("(xy)")
+=(xy) 
 
 
 3)parenBit("hello(not really)there")
-
+=return parenBit("ello(not really)ther")
+=return parenBit("llo(not really)the")
+=return parenBit("lo(not really)th")
+=return parenBit("o(not really)t")
+=return parenBit("(not really)")
+=(not really).
 
 
 4)parenBit("()") 
 =return parentBit(")").
 =).
 
-
-5)parenBit("res (ipsa) loquitor")
 

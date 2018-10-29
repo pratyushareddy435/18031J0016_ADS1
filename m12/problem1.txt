@@ -1,0 +1,61 @@
+ACTIVITY-1:
+
+given P R I O * R * * I * T * Y * * * Q U E * * * U * E 
+  insert -p  list contains - p
+ insert -r   list contains -P R
+ insert-i  list contains - I P R
+insert- o  list contains -I P R O
+delete()- i 
+list contains -O P R
+insert- r   list contains- I P R O R
+delete()-i 
+  list contains - O P R R
+delete()-o 
+  list contains - P R R
+delete()-p
+  list contains -  R R
+insert-i  list contains - I R R
+delete()-i
+  list contains -  R R
+insert-t  list contains -  R R T
+delete()-R 
+  list contains -   R T
+insert-Y  list contains -   R T Y
+delete()-R 
+  list contains -    T  Y
+delete()-T 
+  list contains -   Y
+delete()-Y 
+  list contains - NULL.
+insert-Q  list contains - Q
+insert-U  list contains -  Q U 
+insert-E list contains - E Q U 
+delete()-E
+  list contains - Q U
+delete()-Q
+  list contains -  U  
+delete()-U
+  list contains - NULL.
+insert-U  list contains - U
+delete()-U
+  list contains - NULL.
+insert-E list contains - E
+
+
+
+ACTIVITY-2:
+
+
+Is an array that is sorted in Ascending order a min-oriented heap? Why?
+
+An array in sorted order is similar to the min heap properties.parent node is always less than the child nodes.
+
+
+
+
+
+
+
+
+
+

@@ -73,7 +73,7 @@ public void insertAta(int a,int b,int c)
 		n.next=Head;
 		Head=n;
 		size++;
-	}
+	} 
 	else
 	{	
 		Node t =Head;

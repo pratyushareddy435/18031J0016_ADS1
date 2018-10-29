@@ -1,0 +1,34 @@
+Fill in the Blanks-1
+
+Blank 1: 1
+Blank 2:k/2
+Blank 3: k
+Blank 4:k
+Blank 5:k/2
+Blank 6: k/2
+
+
+Fill in the Blanks-2
+
+Blank 1: N
+Blank 2: 2*k
+Blank 3: N 
+Blank 4: j
+Blank 5:j+1
+Blank 6: j++
+Blank 7:K
+Blank 8:j
+Blank 9:k
+Blank 10:j
+Blank 11:j
+
+Fill in the Blanks-3
+
+1)A E E I G E S S R T O M R V
+
+2) E and E are child nodes of A node
+
+3) I is the root node after  deleteMin() called 5 times
+
+
+
