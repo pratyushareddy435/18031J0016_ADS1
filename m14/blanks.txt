@@ -1,0 +1,33 @@
+blanks:
+
+
+
+Build a max heap with following elements(use the same insertion order) and answer the following questions 
+
+100,  20, 3, 101, 54, 96, 103, 71, 60
+
+1)Number of heapify operations  required to build a max heap.
+ total -3
+
+
+      2)  Leaf elements after performing 2nd heapify operation(Right to left).
+
+3,96,54,60,20.
+
+      3) Leaf elements after inserting all elements into max heap(First child to last child).
+
+20,60,54,96,3.
+
+      4) Elements at level 1 after building a heap. (Left to right)
+
+101,54,96,103
+
+      5) Children of 101 after building a heap.(Left to right)
+
+71,60
+
+      6)  Elements at level 1 after sorting 3 elements. (Left to right)
+
+101,54,96,103
+
+	

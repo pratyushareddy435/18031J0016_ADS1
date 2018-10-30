@@ -1,0 +1,47 @@
+Activity-2:
+
+Draw all of the different heaps that can be made from the five keys A B C D E, then draw all of the different heaps that can be made from the five keys A A A B B.
+ 
+given keys A B C D E, 
+  
+MAX HEAP-BOTTOM UP:
+
+A B C D E -E D C A B 
+
+B C D E A -E B D C A 
+
+C D E A B -E D C A B  
+
+ D E A B C -E D A B C 
+
+ E A B C D -E D B C A 
+ 
+MIN HEAP -BOTTOM UP
+ 
+ A B C D E -A B C D E
+
+B C D E A -A B D E C
+
+C D E A B - A B E D C
+
+D E A B C - A B D E C
+
+E A B C D - A C B E D
+ 
+next given keys -A A A B B.
+
+MAX HEAP- TOP DOWN.
+
+A A A B B -  B  B A A A.
+
+A B B A A - B A B A A.
+
+MIN HEAP- TOP DOWN:
+
+A A A B B - A A A B B
+
+A A B B A - A A B B A
+
+A B B A A - A B B A A
+
+B B A A A - A B A A B
