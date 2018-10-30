@@ -1,4 +1,4 @@
- Input format:
+Input format:
 first line contains an int(N) represents no.of students qualified
 Second line contains an int represent no.of vacancies
 Thirst line contains an int represent no.of unreserved category vacancies
