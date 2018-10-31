@@ -16,7 +16,6 @@ class Student implements Comparable<Student> {
 		this.tot = Integer.parseInt(data[5]);
 		this.cat = data[6];
 	}
-
 	@Override
 	public int compareTo(Student st) {
 		if (st.tot == this.tot) {
@@ -26,13 +25,13 @@ class Student implements Comparable<Student> {
 					String sp2[] = st.dob.split("-");
 					if (sp1[2].equals(sp1[2])) {
 						if (sp1[1].equals(sp1[1])) {
-							return Integer.parseInt(sp1[0]) - Integer.parseInt(sp2[0]);
+							return Integer.parseInt(sp2[0]) - Integer.parseInt(sp1[0]);
 						}
-						return Integer.parseInt(sp1[1]) - Integer.parseInt(sp2[1]);
+						return Integer.parseInt(sp2[1]) - Integer.parseInt(sp1[1]);
 					}
-					return Integer.parseInt(sp1[2]) - Integer.parseInt(sp2[2]);
+					return Integer.parseInt(sp2[2]) - Integer.parseInt(sp1[2]);
 				}
-				return st.m2 - this.m2;
+				return st.m2-this.m2;
 			}
 			return st.m3 - this.m3;
 		}
@@ -52,16 +51,16 @@ public class Solution {
 		for(int i = cp;i < ast.size() && j < nc;i++) {
 			if (ast.get(i).cat.equals(cat)) {
 				Student st1 = ast.remove(i);
-				while (k < cp && st1.tot < ast.get(k).tot)
+				while (k < cp && st1.tot <= ast.get(k).tot)
 					k++;
 				ast.add(k++, st1);
 				cp++;
 				j++;
 			}
 		}
-		for (k = op; j < nc; cp++, j++) {
+		for (k = op; j < nc; cp++,j++) {
 			Student st1 = ast.remove(cp);
-			while (st1.tot < ast.get(k).tot)
+			while (k < cp && st1.tot <= ast.get(k).tot)
 				k++;
 			ast.add(k++, st1);
 		}
