@@ -1,0 +1,10 @@
+Learning by doing-1:
+
+
+Which of the symbol-table implementations in this section would you use for an application that does 10^6 put() operations
+and 10^3 get() operations, randomly intermixed? Justify your answer.
+
+
+
+Ans. When we hash table it is more easy to add, remove and traverse. As, it has a time complexity of O(1). So when compared to 
+other implementations this is more effecient.

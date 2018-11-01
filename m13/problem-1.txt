@@ -1,0 +1,117 @@
+FILL IN THE BLANKS-1:
+
+
+
+public void put(Key key, Value val) {
+       if
+(key == -------------) throw new IllegalArgumentException("first argument
+to put() is null");  //Blank1
+       if
+(val == null) {
+           delete(-----------------);
+  //Blank2
+           return;
+       }
+       for
+(Node x = first; x != null; x = ------------) { //Blank3
+           if
+(key.equals(-----------)) { //Blank4
+               x.val
+= val;
+               return;
+           }
+       }
+       first
+= new Node(key, val,------------------); //Blank5
+       n++;
+   }
+
+Blank1:--null
+
+Blank2:-key
+
+Blank3:-x=x.next
+
+Blank4:x.key
+
+Blank5:first
+
+
+FILL IN THE BLANKS-2:
+
+
+Answer the following Questions. The following code is for rank method in Binary search ST
+
+public int rank(Key key) {
+       if (key == null) throw new IllegalArgumentException("argument to rank() is null");
+
+
+       int lo = 0, hi = n-1; 
+       while (lo <= --------) {  //Blank 1
+           int mid = lo + (hi - lo) / 2; 
+           int cmp = key.compareTo(keys[----------]);  //Blank 2
+           if (cmp < 0) hi = mid - 1; 
+           else if (cmp > 0) lo = mid + 1; 
+           else return ---------------------; //Blank 3
+       } 
+       return lo;
+   }
+
+ 
+
+Blank1:hi
+
+Blank2:keys[mid]
+
+Blank3:mid
+ 
+
+
+FILL IN THE BLANKS -3:
+
+Suppose the following is you Binary search ST. Answer the following questions after performing operations given below.
+
+ 
+
+ 
+
+ 
+
+What will be the value return by max() method when it is performed on above ST
+
+
+Ans. This returns the maximum element of the list.
+
+ 
+
+What will be the value return by min() method when it is performed on above ST
+
+ 
+
+Ans. This method returns the minimum element of the list.
+
+
+What will be the value return by select(2) method when it is performed on above ST
+
+
+Ans. Returns the second key value in the list of keys.
+
+ 
+
+What will be the value return by get(R) method when it is performed on above ST
+
+
+Ans. Returns the value at R.
+
+ 
+
+What will be the value return by floor(N) method when it is performed on above ST
+
+
+Ans. Rounds it up to the greatest value of the integer. 
+
+
+What will be the value return by ceiling(N) method when it is performed on above ST
+
+
+Ans. Rounds it up to the smallest value of the integer.
