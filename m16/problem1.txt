@@ -1,0 +1,119 @@
+FILL IN THE BLANKS-1:
+
+1) Fill the following blanks in the get method of BST
+
+private Value get(Node x, Key key) { 
+
+if (x == null) return ___________;     // Blank 1 
+
+int cmp = key.compareTo(_____________);   // Blank 2
+
+if (cmp < 0) 
+
+return get(________, key);      // Blank 3
+
+else if (cmp > 0) 
+
+return get(___________, key);    // Blank 4
+
+else return x.val; 
+
+}
+
+Blank1:null
+
+Blank2:x.key
+
+Blank3:x.left
+
+Blank4:x.right
+
+
+FILL IN THE BLANKS-2:
+
+
+Fill the following blanks in the put method of BST
+
+private Node put(Node x, Key key, Value val) { 
+
+if (x == ______________)          // Blank 1
+
+return new Node(key, val); 
+
+int cmp = key.compareTo(___________);    // Blank 2
+
+if (cmp < 0) 
+
+x.left = put(_____________, key, val);    // Blank 3
+
+else if (cmp > 0) 
+
+x.right = put(_____________, key, val);   // Blank 4
+
+else 
+
+x.val = val; 
+
+return x; 
+
+}
+
+
+Blank1:null
+
+Blank2:key
+
+Blank3:x.left
+
+Blank4:x.right
+
+
+FILL IN THE BLANKS-3:
+
+Note: A BST is a binary tree where nodes are ordered in the following way:
+
+each node contains one key (also known as data)
+
+The keys in the left subtree are less than the key in its parent node, in short L < P;
+
+The keys in the right subtree are greater the key in its parent node, in short P < R;
+
+Duplicate keys are not allowed.
+
+
+
+Following the above criteria, draw a BST for the following keys (you receive keys from
+
+left to right) and answer the below questions.
+
+11, 6, 8, 19, 4, 17, 43, 49, 31
+
+What will be the child nodes for element 6 ?
+4,8
+
+How many leaf nodes in the resultant tree ?
+5
+
+How many compares (key compares) does it take to insert the last element(31) in to the tree?
+3
+
+How many compares (key compares) does it take when we call get(8) method ?
+3
+
+LEARNING BY DOING:
+
+1)Suppose that a certain BST has keys that are integers between 1 and 10, and we search for 5.
+ Which sequence below cannot be the sequence of keys examined? Why?
+a. 10, 9, 8, 7, 6, 5 
+Ans) yes
+
+b. 4, 10, 8, 7, 3, 5
+Ans) no
+
+c. 1, 10, 2, 9, 3, 8, 4, 7, 6, 5
+Ans) yes. 
+d. 2, 7, 3, 8, 4, 5
+Ans)no.
+ 
+e. 1, 2, 10, 4, 8, 5
+Ans)yes.
