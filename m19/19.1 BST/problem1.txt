@@ -1,0 +1,12 @@
+ Learning by doing-1
+Give the sequences of nodes examined when the methods in BST are used to compute each of the following quantities for the tree drawn at below.
+a. floor("Q") ==q	
+b. select(5) ==q
+c. ceiling("Q") ==e
+d. rank("J") ==1
+e. size("D", "T") ==5
+f. keys("D", "T")==5
+bst
+Answer the above problem in a file name problem-1.txt and add it to the folder ADS-1-practice/m19
+Push the respository to GitHub when your answer is done
+Enter the git commit ID in the blank below                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
