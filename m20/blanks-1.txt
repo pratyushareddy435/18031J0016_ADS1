@@ -39,3 +39,6 @@ Blank9:---x.right
 
 Blank10:---1
 
+
+Draw the 2-3 tree that results when you insert the keys E A S Y Q U E S T I O N, in that order into an
+ initially empty 2-3 tree.
