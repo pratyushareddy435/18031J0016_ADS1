@@ -60,21 +60,8 @@ public class Solution {
 		
 	}
 	
-	public void print1(Node temp,int sval,Node tp1) {
-		if(temp!=null) {
-			//System.out.println("indx:"+indx);
-			if(indx-1 == sval) {
-				System.out.println(tp1.key);
-				return;
-			} else {
-				print1(temp.left,sval,tp1);
-				tp1 = temp;
-				indx++;
-				print1(temp.right,sval,tp1);
-			}
-		}
-		
-	}
+	
+	
 
 	public Node Floor(Node x,Book key) {
 		if(x==null)
@@ -123,7 +110,20 @@ public class Solution {
     }
 	public void Select(int k) {
 		
-		print1(root,k,null);
+		select(root,k);
+	}
+	
+	public void select(Node temp,int sval) {
+		if(temp!=null) {
+			select(temp.left,sval);
+			if(indx==sval) {
+				System.out.println(temp.key);
+				indx++;
+				return;
+			}
+			indx++;
+			select(temp.right,sval);
+		}
 	}
  
 	public int get(Book Key)
