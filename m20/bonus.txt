@@ -1,0 +1,9 @@
+BONUS-1:
+
+public  boolean bST(Node r)
+{
+if(r==root)
+return true;
+else
+return false;
+}

@@ -1,4 +1,4 @@
-package m15;
+
 
 import java.util.Scanner;
 

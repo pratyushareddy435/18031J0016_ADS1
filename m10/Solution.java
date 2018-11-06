@@ -86,7 +86,8 @@ public void insertAta(int a,int b,int c)
 void	ins(Node temp,int a,int b,int count,Node n)
 	{
 		if(temp!=null && count<a-1)
-		{temp=temp.next;
+		{
+              temp=temp.next;
 		count++;
 		ins(temp,a,b,count,n);
 	}
