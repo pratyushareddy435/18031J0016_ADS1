@@ -31,6 +31,7 @@ class Node
 
 public class Solution {
 	Node root;
+	static int indx=0;
 	public void put(Book key,int val) {
 		root=put(root,key,val);
 	}
@@ -58,6 +59,22 @@ public class Solution {
 		}
 		
 	}
+	
+	public void print1(Node temp,int sval,Node tp1) {
+		if(temp!=null) {
+			//System.out.println("indx:"+indx);
+			if(indx-1 == sval) {
+				System.out.println(tp1.key);
+				return;
+			} else {
+				print1(temp.left,sval,tp1);
+				tp1 = temp;
+				indx++;
+				print1(temp.right,sval,tp1);
+			}
+		}
+		
+	}
 
 	public Node Floor(Node x,Book key) {
 		if(x==null)
@@ -74,7 +91,7 @@ public class Solution {
 		}
 			return x;
 	}
-	public Node Ceiling(Node x,Book key) {
+	public Node Ceiling(Node x,Book key) { 
 		if(x==null)
 			return x;
 		int c=key.Name.compareTo(x.key.Name);
@@ -104,6 +121,10 @@ public class Solution {
         }
         return node.key.toString();
     }
+	public void Select(int k) {
+		
+		print1(root,k,null);
+	}
  
 	public int get(Book Key)
 	{
@@ -156,6 +177,9 @@ public class Solution {
 				break;
 			case "max":
 				System.out.println(bt.maxValue(bt.root));
+				break;
+			case "select":
+				bt.Select(Integer.parseInt(s2[1]));
 				break;
 			}
 			
