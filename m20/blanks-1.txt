@@ -1,0 +1,41 @@
+BLANKS:
+
+Fill the following blanks in the delete method of BST:
+
+private Node delete(Node x, Key key) {
+        if (x == null) 	return ____________;  //Blank1
+        int cmp = key.compareTo(_______);  //Blank2
+        if (cmp < 0)	x.left  = delete(__________,  key); //Blank3
+        else if (cmp > 0) 	x.right = delete(__________, key); //Blank4
+        else { 
+            if (x.right == null)		return __________; //Blank5
+            if (x.left  == _____ ) 		return x.right; //Blank6
+            Node t = ________ ;    //Blank7
+            x = min(___________); //Blank8
+           ____________ = deleteMin(t.right);  //Blank9
+            x.left = t.left;
+        } 
+        x.size = size(x.left) + size(x.right) + _________; //Blank10
+        return x;
+    }
+
+Blank1:----null-
+
+Blank2:---x.key
+
+Blank3:----x.left
+
+Blank4:--x.right
+
+Blank5:--x.left
+
+Blank6:--x.right
+
+Blank7:--x--
+
+Blank8:---t.right
+
+Blank9:---x.right
+
+Blank10:---1
+
