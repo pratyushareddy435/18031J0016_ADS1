@@ -1,0 +1,111 @@
+Fill in the blanks-1
+
+Answer the following questions on Separate Chaining Hash table for the keys and its hash values.
+Keys : S E A R C H E X A M P L E
+Hash : 2 0 0 4 4 4 0 2 0 4 3 3 0
+Note: If there are no keys write null, If there are multiple keys write keys with comma space separated
+
+For the index 0, Write the keys in ascending order.
+
+A,E
+
+For the index 4, Write the keys in ascending order.
+
+C,H,M,R
+
+For the index 1, Write the keys in ascending order.
+
+null
+
+For the index 2, Write the keys in ascending order.
+
+S,X
+
+For the index 3, Write the keys in ascending order
+L,P
+
+Fill in the blanks-2
+
+After Inserting elements 1, 32, 22, 15, 33, 45, 66, 73, 10. How many collisions occur when you hashCode() as key % size after inserting keys into hashtable for given sizes below.
+
+Size = 7 
+1%7=1
+32%7=4
+22%7=1
+15%7=1
+33%7=5
+45%7=3
+66%7=3
+73%7=3
+10%7=3
+here 45,66,73,10 had collision at index 3.
+here 22,15,1 had collision at index 1.
+
+Size = 8
+1%8=1
+32%8=0
+22%8=6
+15%8=7
+33%8=1
+45%8=3
+66%8=2
+73%8=1
+10%8=2
+here 1,33,73 had collision at index 1.
+here 66,10 had collisions at index 2.
+
+Size = 12
+1%12=1
+32%12=6
+22%12=11
+15%12=3
+33%12=7
+45%12=9
+66%12=6
+73%12=1
+10%12=1
+here 1,73,10 had collision at index 1.
+
+Size = 1
+1%1=0
+32%1=0
+22%1=0
+15%1=0
+33%1=0
+45%1=0
+66%1=0
+73%1=0
+10%1=0
+here 1,32,22,15,33,45,66,73,10 had collision at index 0.
+
+Fill in the blanks-3
+
+In a separate-chaining hash table with M lists and N keys, the number of compares (equality tests) for search and insert is proportional to N/M. (true/false)
+A.TRUE
+
+Any good hash function should have the three properties :  (true/false)
+
+It should be deterministic, equal keys must produce the same hash value.
+
+It should be efficient to compute.
+
+It should uniformly distribute the keys.
+A.TRUE
+
+
+
+
+How many empty lists do you expect to see when you insert keys 1, 2, 3, 4, 5, 6 into a hash table with Separate Chaining Hashing with hashCode as key % size , for size = 2 without any resizing?
+A.1
+
+
+
+How many empty lists do you expect to see when you insert keys 2, 22, 32, 42, 52 into a hash table with Separate Chaining Hashing with hashCode as key % size , for size = 10 without any resizing?
+A.0
+
+
+
+How many empty lists do you expect to see when you insert keys 15, 30, 45, 60, 75 into a hash table with Separate Chaining Hashing with hashCode as key % size , for size = 15 without any resizing?
+A.15
+
+

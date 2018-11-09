@@ -1,0 +1,9 @@
+Learning by doing-1
+
+Is the following implementation of hashCode() legal?
+public int hasCode(){
+
+return 17;
+
+}
+A.ILLEGAL
