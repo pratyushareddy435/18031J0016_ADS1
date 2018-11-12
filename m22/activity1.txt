@@ -1,0 +1,28 @@
+FILL IN THE BLANKS 1:
+
+blank1: null
+blank2: key
+blank3: size
+blank4: key
+blank5: m
+
+Activity 2:
+
+Fill in the blanks-2
+
+Answer the following questions on Hashing with Linear Probing 
+When the following keys are inserted into a hash table of size=10. Hash function is calculated as Ascii value%size .
+Keys : E A S Y Q U T I O N
+
+Keys: Y Q O S T A I U N E
+hash: 0 1 2 3 4 5 6 7 8 9
+
+Activity-3:
+
+Which of the following scenarios leads to expected linear running time for a random search hit in a linear-probing hash table?
+a. All keys hash to the same index.
+b. All keys hash to different indices.
+c. All keys hash to an even-numbered index.
+d. All keys hash to different even-numbered indices. 
+
+Answer-b.

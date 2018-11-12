@@ -11,7 +11,7 @@ public class Solution {
   public Solution(String magazine, String note) { 
     Collection<String> magazineStrings = Arrays.asList(magazine.split(" "));
     Collection<String> noteStrings = Arrays.asList(note.split(" "));
-    magazineMap = new HashMap<String,Integer>();
+       magazineMap = new HashMap<String,Integer>();
     noteMap = new HashMap<String,Integer>();
 
    
